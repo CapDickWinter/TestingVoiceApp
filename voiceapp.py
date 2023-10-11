@@ -3,7 +3,7 @@ import requests
 # streaming chunk size
 CHUNK_SIZE = 1024
 
-XI_API_KEY = "<xi-api-key>"
+XI_API_KEY = "3ce9b46da1e43ef365ee637c30fa0059"
 VOICE_SAMPLE_PATH1 = "<path-to-file>"
 VOICE_SAMPLE_PATH2 = "<path-to-file>"
 OUTPUT_PATH = "<path-to-file>"
@@ -12,7 +12,7 @@ add_voice_url = "https://api.elevenlabs.io/v1/voices/add"
 
 headers = {
   "Accept": "application/json",
-  "xi-api-key": 3ce9b46da1e43ef365ee637c30fa0059
+  "xi-api-key": XI_API_KEY
 }
 
 data = {
@@ -61,7 +61,7 @@ history_url = "https://api.elevenlabs.io/v1/history"
 
 headers = {
   "Accept": "application/json",
-  "xi-api-key": 3ce9b46da1e43ef365ee637c30fa0059
+  "xi-api-key": XI_API_KEY
 }
 
 response = requests.get(history_url, headers=headers)
